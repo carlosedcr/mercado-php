@@ -108,6 +108,7 @@
       <td>
         <form method='post' action="index.php?page=register&action=addImage" enctype='multipart/form-data'>
         <input type="hidden" name="id" value="<?php echo $product->getId()?>"/>
+        <input type="hidden" name="name" value="<?php echo $product->getName()?>"/>
         <div class="input-group">
           <div class="custom-file">
             <input type="file" name='pic' class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">

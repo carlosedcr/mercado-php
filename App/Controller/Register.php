@@ -66,7 +66,8 @@ class Register extends Controller{
   public function addImage(){
     $ext = strtolower(substr($_FILES['pic']['name'],-4));
     $id = $_POST['id'];
-    $new_name = 'imageid'.$id . $ext;
+    $name = $_POST['name'];
+    $new_name = 'image'.$name . $ext;
     $dir = 'app/assets/imagens/'; 
     move_uploaded_file($_FILES['pic']['tmp_name'], $dir.$new_name);
     $this->product->setImage($id);

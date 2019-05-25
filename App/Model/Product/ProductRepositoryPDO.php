@@ -54,7 +54,7 @@ class ProductRepositoryPDO implements ProductRepository{
     }
 
     public function edit($id, $name, $price, $tax, $type){
-        $stmt = $this->pdo->prepare("UPDATE product SET name = '$name' , price = '$price' , tax = '$tax', type = '$type' WHERE id = :id");
+        $stmt = $this->pdo->prepare("UPDATE product SET name = '$name' , price = '$price' , tax = '$tax', type = '$type' , image = false WHERE id = :id");
         $stmt->bindValue(":id", $id, \PDO::PARAM_INT);
         $stmt->execute();
     }
