@@ -3,7 +3,11 @@
     <?php if ($product->getImage() == false) : ?>
         <img class="card-img-top" src="https://placehold.it/280x140/abc" alt="Card image cap">
     <?php elseif($product->getImage() == true) : ?>
+        <!--
         <img class="card-img-top" src="app/assets/imagens/image<?php echo $product->getName();?>.jpg" alt="Card image cap">
+        Ativar caso queria pegar a imagem direto da maquina.
+        --> 
+        <img class="card-img-top" src="https://raw.githubusercontent.com/carlosedcr/mercado-php/master/App/Assets/imagens/image<?php echo $product->getName();?>.jpg" alt="Card image cap">
     <?php endif; ?>
     <div class="card-body">
         <h6 class="card-title"><?php echo $product->getName();?></h6>
