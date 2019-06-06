@@ -8,7 +8,9 @@ include_once DIR.DS.'App'.DS.'Loader.php';
 $loader = new App\Loader();
 $loader->register();
 
-$pdo = new \PDO("pgsql:host=localhost;port=5432;dbname=shop;user=user;password=admin");
+//$pdo = new \PDO("pgsql:host=localhost;port=5432;dbname=shop;user=user;password=admin"); //bd local
+
+$pdo = new \PDO("pgsql:host=tuffi.db.elephantsql.com;port=5432;dbname=dnaqzqcm;user=dnaqzqcm;password=8H7Kkmy9DhGSk1gdkCfagyhtHwtwdIxC"); //bd online
 $productRepository = new App\Model\Product\ProductRepositoryPDO($pdo);
 
 $page = isset($_GET['page']) ? $_GET['page'] : '';
