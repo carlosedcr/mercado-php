@@ -128,11 +128,4 @@
 </div>
 
 </body>
-<footer class="page-footer font-small blue fixed-bottom">
-  <div class="footer-copyright text-right py-3" style='margin-right:5px;'>© 2019 Carlos Correa
-  <a class="grey-text text-darken-4 " style='margin-right:5px;' href="https://github.com/carlosedcr" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-    <a class="grey-text text-darken-4 " style='margin-right:5px;' href="https://www.linkedin.com/in/carlos-eduardo-corr%C3%AAa-7744a493/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
-    <a class="grey-text text-darken-4 " style='margin-right:5px;' href="mailto:carlosedcorrea2@gmail.com" ><i class="far fa-envelope fa-lg"></i></a>
-  </div>
-</footer>
 </html>
